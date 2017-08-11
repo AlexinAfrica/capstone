@@ -291,8 +291,6 @@ nav ul li:hover {
   justify-content: space-around;
   align-items: center;
 
-
-
 }
 
 .thesis-video {
@@ -337,4 +335,28 @@ nav ul li:hover {
   max-width: 65%;
   flex-wrap: wrap;
 
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid  #e0e2e2;
+  background-color: #f3f5f5;
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer li {
+  padding-left: 1rem;
+}
+
+footer li a:hover {
+  color: #37b6ee;
 }

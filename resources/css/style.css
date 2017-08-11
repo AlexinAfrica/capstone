@@ -1,0 +1,273 @@
+html {
+  font-family: 'Roboto', sans-seriff;
+  font-size: 16px;
+  background-color: white;
+  color: #4a4a4a;
+  letter-spacing: 0.3px;
+}
+
+/* Body */
+
+body {
+
+}
+
+a {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color:
+  color: #37b6ee;
+  border-radius: 15px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+
+}
+
+/* Header */
+header {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 4rem;
+  padding: 1rem 1.5rem;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.logo img {
+  align-items: center;
+  height: 100%;
+
+}
+
+header .desktop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header .mobile {
+  display: none;
+}
+
+nav ul li {
+  padding: 1rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+nav ul li:hover {
+  background-color: #37b6ee;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Main Content Box */
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: #d8d8d8;
+}
+
+.main-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+
+
+}
+
+.main-copy h1 {
+  padding: 1rem 0;
+}
+
+.main-copy h3 {
+  padding: 1rem 0;
+}
+
+.main-button {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  width: 90%;
+}
+
+.main-content img {
+  max-width: 60%;
+  overflow: hidden;
+  display: inline;
+
+  padding: 2rem 1.5rem;
+}
+
+
+/* Second content section */
+
+.second-content {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 1.5rem;
+}
+
+.second-main {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem;
+
+}
+
+.second-main img {
+  overflow: hidden;
+}
+
+.second-copy {
+  padding: 2rem 1.5rem;
+
+}
+
+.second-copy h1 {
+  padding-bottom: 1.5rem;
+
+}
+
+.second-copy p {
+
+}
+
+.info-image {
+  padding-left: 1rem;
+
+}
+
+.info-main {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e2e2;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e2e2;
+
+}
+
+.info-container a {
+  color: #4a90e2;
+}
+
+.info-container a:hover {
+  color: #ff5500;
+}
+
+.info-image img {
+  max-width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+.info-container img {
+  padding: 1rem;
+  overflow: auto;
+
+}
+
+.info-container:last-child {
+  background-color: #d8d8d8;
+
+}
+
+.info-copy {
+  display: flex;
+  max-width: 65%;
+  padding-left: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+/* Learning Section */
+
+.learning-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f5f5;
+  padding: 2rem 2.5rem;
+}
+
+.learning-header {
+  text-align: center;
+}
+
+.learning-courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.learning-module {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30%;
+  padding-top: 2rem;
+  height: auto;
+
+}
+
+.learning-module img {
+  overflow: hidden;
+  max-height: auto;
+}
+
+.learning-copy {
+  background-color: white;
+  padding: 1rem 1rem 1.5rem 1rem;
+
+}
+
+.learning-copy h4, span, p {
+  max-width: 90%;
+}
+
+.learning-copy span, p {
+  font-weight: 300;
+}

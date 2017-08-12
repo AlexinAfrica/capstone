@@ -139,7 +139,6 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   max-width: 30%;
   padding-right: 3rem;
 }
@@ -437,7 +436,7 @@ nav ul li:hover {
   flex-direction: column;
   align-items: center;
   background-color: #f3f5f5;
-  height: 45rem;
+  height: auto;
 }
 
 .thesis-main {
@@ -448,6 +447,7 @@ nav ul li:hover {
 .thesis-sub {
   display: flex;
   flex-direction: row;
+  padding-bottom: 2rem;
 }
 
 .thesis-video {
@@ -470,7 +470,6 @@ nav ul li:hover {
 .thesis-side-container {
   display: flex;
   flex-direction: column;
-  max-height: 60%;
 
 }
 

@@ -78,8 +78,40 @@ header .desktop {
   flex-wrap: wrap;
 }
 
-header .mobile {
+@media only screen and (max-width: 480px) {
+
+  header {
+    padding: 0;
+  }
+
+
+  header .desktop, .logo {
+    display: none
+  }
+
+  .header-container {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .mobile {
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+  header .mobile {
   display: none;
+  }
 }
 
 nav ul li {
@@ -100,6 +132,7 @@ nav ul li:hover {
   display: flex;
   flex-direction: row;
   background-color: #d8d8d8;
+  height: 40rem;
 }
 
 .main-copy {
@@ -127,16 +160,51 @@ nav ul li:hover {
   width: 100%;
 }
 
-.main-content {
-  height: 40rem;
-
-}
-
 .main-content img {
   max-width: 60%;
   height: auto;
   overflow: hidden;
   padding: 2rem 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .main-content img {
+    max-width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .main-image {
+    padding: 0;
+  }
+
+  .main-copy {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .main-copy h1 {
+    padding-bottom: 2rem;
+  }
+
+  .main-copy h3 {
+    padding: 0 0 1.5rem 0;
+  }
+
+  .main-button {
+    background-color: #9b9b9b;
+    max-width: 80%;
+  }
+
+
+
 }
 
 

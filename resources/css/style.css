@@ -203,8 +203,6 @@ nav ul li:hover {
     max-width: 80%;
   }
 
-
-
 }
 
 
@@ -252,7 +250,7 @@ nav ul li:hover {
 .info-container {
   display: flex;
   align-items: center;
-  border: 0.3px solid #e0e2e2;
+  border-bottom: 0.3px solid #e0e2e2;
 
 }
 
@@ -275,12 +273,15 @@ nav ul li:hover {
   overflow: hidden;
 }
 
-.info-container img {
+@media only screen and (min-width: 480px) {
+
+  .info-container img {
   padding: 1rem;
   overflow: auto;
   height: auto;
   max-width: 35%;
 
+  }
 }
 
 .info-container:last-child {
@@ -294,6 +295,50 @@ nav ul li:hover {
   padding-left: 1rem;
   flex-direction: column;
   flex-wrap: wrap;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .second-content {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #f3f5f5;
+  }
+
+  .second-main {
+    display: none;
+  }
+
+  .info-main {
+    max-width: 100%;
+    border: 0;
+  }
+
+  .info-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border: 0;
+    align-items: flex-start;
+
+  }
+
+  .info-container img {
+    width: 100%;
+    height: 10rem;
+    padding: 0;
+  }
+
+  .info-container:last-child {
+    background-color: #f3f5f5
+  }
+
+  .info-copy {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
 
 }
 
@@ -336,6 +381,8 @@ nav ul li:hover {
 .learning-copy {
   background-color: white;
   padding: 1rem 1rem 1.5rem 1rem;
+  align-items: center;
+  text-align: left;
 
 }
 
@@ -346,6 +393,42 @@ nav ul li:hover {
 .learning-copy span, p {
   font-weight: 300;
 }
+
+@media only screen and (max-width: 480px) {
+  .learning-container {
+    border-top: 1px solid #e0e2e2;
+    border-bottom: 1px solid #e0e2e2;
+  }
+
+  .learning-container br {
+    display: none;
+  }
+
+  .learning-courses {
+    flex-direction: column;
+  }
+
+  .learning-courses img, .learning-courses span, .learning-courses p {
+    display: none;
+  }
+
+  .learning-module {
+    max-width: 100%;
+    padding-top: 0.5rem;
+
+  }
+
+  .learning-header {
+    padding-bottom: 1rem;
+  }
+
+  .learning-copy {
+    background-color: #d8d8d8;
+    padding: 1rem 1.5rem;
+  }
+
+}
+
 
 /* Thesis Section */
 
@@ -418,6 +501,32 @@ nav ul li:hover {
 
 }
 
+@media only screen and (max-width: 480px) {
+  .thesis-container {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    height: auto;
+  }
+
+  .thesis-sub {
+    flex-direction: column;
+  }
+
+  .video-copy {
+    display: none;
+  }
+
+  .thesis-side {
+    display: none;
+  }
+
+  .thesis-video {
+    max-width: 100%;
+    padding: 0;
+  }
+
+}
+
 /* Footer */
 
 footer {
@@ -441,4 +550,17 @@ footer li {
 
 footer li a:hover {
   color: #37b6ee;
+}
+
+@media only screen and (max-width: 480px) {
+  footer ul {
+    display: none;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+
+  }
+
 }

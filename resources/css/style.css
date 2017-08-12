@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+li a:hover {
   color: white;
   background-color:
   color: #37b6ee;
@@ -49,6 +49,7 @@ header {
   max-height: 4rem;
   padding: 1rem 1.5rem;
   z-index: 1;
+
 }
 
 .logo {
@@ -106,32 +107,35 @@ nav ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 40%;
-
-
+  max-width: 30%;
+  padding-right: 3rem;
 }
 
 .main-copy h1 {
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .main-copy h3 {
-  padding: 1rem 0;
+  padding: 1.5em 0;
 }
 
 .main-button {
   background-color: #4a4a4a;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
-  width: 90%;
+  width: 100%;
+}
+
+.main-content {
+  height: 40rem;
+
 }
 
 .main-content img {
   max-width: 60%;
+  height: auto;
   overflow: hidden;
-  display: inline;
-
   padding: 2rem 1.5rem;
 }
 
@@ -142,6 +146,7 @@ nav ul li:hover {
   display: flex;
   flex-direction: row;
   padding: 2rem 1.5rem;
+  height: 40rem;
 }
 
 .second-main {
@@ -163,16 +168,10 @@ nav ul li:hover {
 
 .second-copy h1 {
   padding-bottom: 1.5rem;
-
 }
 
-.second-copy p {
-
-}
-
-.info-image {
-  padding-left: 1rem;
-
+.second-copy span {
+  font-weight: 400;
 }
 
 .info-main {
@@ -185,7 +184,7 @@ nav ul li:hover {
 .info-container {
   display: flex;
   align-items: center;
-  border: 1px solid #e0e2e2;
+  border: 0.3px solid #e0e2e2;
 
 }
 
@@ -197,8 +196,13 @@ nav ul li:hover {
   color: #ff5500;
 }
 
+.info-image {
+  padding-left: 1rem;
+  height: auto;
+}
+
 .info-image img {
-  max-width: 35%;
+
   height: auto;
   overflow: hidden;
 }
@@ -206,6 +210,8 @@ nav ul li:hover {
 .info-container img {
   padding: 1rem;
   overflow: auto;
+  height: auto;
+  max-width: 35%;
 
 }
 
@@ -230,6 +236,7 @@ nav ul li:hover {
   flex-direction: column;
   background-color: #f3f5f5;
   padding: 2rem 2.5rem;
+
 }
 
 .learning-header {
@@ -255,7 +262,7 @@ nav ul li:hover {
 
 .learning-module img {
   overflow: hidden;
-  max-height: auto;
+  height: auto;
 }
 
 .learning-copy {
@@ -279,28 +286,28 @@ nav ul li:hover {
   flex-direction: column;
   align-items: center;
   background-color: #f3f5f5;
+  height: 45rem;
 }
 
 .thesis-main {
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .thesis-sub {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
 }
 
 .thesis-video {
-  padding: 2rem 1.5rem;
+  padding: 0 1.5rem;
   max-width: 60%;
 
 }
 
 .thesis-video video {
   max-width: 100%;
+  height: auto;
   padding-bottom: 1.5rem;
 
 }
@@ -312,11 +319,13 @@ nav ul li:hover {
 .thesis-side-container {
   display: flex;
   flex-direction: column;
+  max-height: 60%;
 
 }
 
 .thesis-side {
   display: flex;
+  max-height: 60%;
 
 }
 
@@ -325,6 +334,10 @@ nav ul li:hover {
   padding: 1rem;
   height: auto;
   overflow: hidden;
+}
+
+.thesis-side:first-child {
+  background-color: #d8d8d8;
 }
 
 .thesis-copy {
@@ -346,6 +359,7 @@ footer {
   padding: 1rem 1.5rem;
   border-top: 1px solid  #e0e2e2;
   background-color: #f3f5f5;
+
 }
 
 footer ul {

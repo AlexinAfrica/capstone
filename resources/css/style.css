@@ -156,7 +156,12 @@ nav ul li:hover {
   color: white;
   padding: 1rem;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
+}
+
+.main-button:hover {
+  color: #ff5500;
+  border-radius: 15px;
 }
 
 .main-content img {
@@ -195,11 +200,12 @@ nav ul li:hover {
 
   .main-copy h3 {
     padding: 0 0 1.5rem 0;
+    max-width: 100%;
   }
 
   .main-button {
     background-color: #9b9b9b;
-    max-width: 80%;
+    max-width: 100%;
   }
 
 }
@@ -385,9 +391,6 @@ nav ul li:hover {
 
 }
 
-.learning-copy h4, span, p {
-  max-width: 90%;
-}
 
 .learning-copy span, p {
   font-weight: 300;

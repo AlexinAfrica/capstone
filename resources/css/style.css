@@ -19,8 +19,7 @@ a {
 
 li a:hover {
   color: white;
-  background-color:
-  color: #37b6ee;
+
   border-radius: 15px;
 }
 
@@ -160,7 +159,7 @@ nav ul li:hover {
 }
 
 .main-button:hover {
-  color: #ff5500;
+  color: black;
   border-radius: 15px;
 }
 
@@ -249,13 +248,14 @@ nav ul li:hover {
     max-width: 40%;
     display: flex;
     flex-direction: column;
-    border: 1px solid #e0e2e2;
 }
 
 .info-container {
   display: flex;
   align-items: center;
-  border-bottom: 0.3px solid #e0e2e2;
+  border-left: 0.3px solid #e0e2e2;
+  border-top: 0.3px solid #e0e2e2;
+  border-right: 0.3px solid #e0e2e2;
 
 }
 
@@ -282,7 +282,6 @@ nav ul li:hover {
 
   .info-container img {
   padding: 1rem;
-  overflow: auto;
   height: auto;
   max-width: 35%;
 
@@ -353,7 +352,7 @@ nav ul li:hover {
   display: flex;
   flex-direction: column;
   background-color: #f3f5f5;
-  padding: 2rem 2.5rem;
+  padding: 2rem 2.5rem 0rem 2.5rem;
 
 }
 
@@ -370,11 +369,17 @@ nav ul li:hover {
 
 .learning-module {
   display: flex;
+  background-color: white;
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 30%;
-  padding-top: 2rem;
+  margin-top: 2rem;
   height: auto;
+
+}
+
+.learning-module:hover {
+  border: 1px solid #4a4a4a;
 
 }
 
@@ -398,8 +403,9 @@ nav ul li:hover {
 
 @media only screen and (max-width: 480px) {
   .learning-container {
-    border-top: 1px solid #e0e2e2;
+    margin-top: 1px solid #e0e2e2;
     border-bottom: 1px solid #e0e2e2;
+    padding-bottom: 2rem;
   }
 
   .learning-container br {
@@ -416,7 +422,9 @@ nav ul li:hover {
 
   .learning-module {
     max-width: 100%;
-    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+
+    background-color: #f3f5f5;
 
   }
 
@@ -445,6 +453,7 @@ nav ul li:hover {
 .thesis-main {
   text-align: center;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .thesis-sub {
@@ -505,13 +514,13 @@ nav ul li:hover {
 
 @media only screen and (max-width: 480px) {
   .thesis-container {
-    padding-top: 2rem;
     padding-bottom: 1.5rem;
     height: auto;
   }
 
   .thesis-sub {
     flex-direction: column;
+    padding: 0;
   }
 
   .video-copy {
